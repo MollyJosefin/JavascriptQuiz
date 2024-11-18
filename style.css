@@ -1,0 +1,158 @@
+/* Grunddesign */
+body {
+    background: linear-gradient(to bottom right, #eef2f6, #dfe3e8);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  /* Huvudcontainer */
+  #quiz-container {
+    max-width: 800px;
+    width: 90%;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Kapitelmeny */
+  #chapter-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Kapitelknappar */
+  .chapter-button {
+    background: #3182ce;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+  }
+  
+  .chapter-button:hover {
+    background: #2c5282;
+    transform: scale(1.05);
+  }
+
+  /* Stil för aktiv kapitelknapp */
+.active-chapter {
+    font-weight: bold;
+    background: #2c5282; /* Gör knappen mörkare */
+    color: white;
+    border: 2px solid #2b6cb0;
+  }
+  
+  
+  /* Quiz-frågor */
+  #quiz-area {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f7fafc;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+  #question-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+  
+  /* Svarsknappar */
+  .answer-button {
+    display: block;
+    background: #edf2f7;
+    border: 2px solid #cbd5e0;
+    padding: 15px 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+  }
+  
+  .answer-button:hover {
+    background: #e2e8f0;
+    transform: scale(1.02);
+  }
+  
+  .answer-button.correct {
+    background: #48bb78;
+    color: white;
+    border: none;
+  }
+  
+  .answer-button.incorrect {
+    background: #f56565;
+    color: white;
+    border: none;
+  }
+  
+  /* Förklaringstext */
+  #explanation-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #2d3748;
+  }
+  
+  /* Navigationsknappar */
+  button.navigation-button {
+    background: #f6ad55;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px 5px;
+    transition: background 0.3s ease;
+  }
+  
+  button.navigation-button:hover {
+    background: #dd6b20;
+  }
+  
+  /* Responsiv design */
+  @media (max-width: 768px) {
+    #quiz-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    .chapter-button {
+      font-size: 0.9em;
+      padding: 8px 12px;
+    }
+  
+    .answer-button {
+      padding: 8px 15px;
+      font-size: 1em;
+    }
+  }
+  .hidden {
+    display: none;
+  }
+  

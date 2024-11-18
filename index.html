@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="quiz-container">
+    <!-- Quiz-wrapper för kapitelmenyn -->
+    <div id="quiz-wrapper">
+      <h1 id="quiz-title">JavaScript Quiz</h1>
+      <h2>Välj ett kapitel</h2>
+      <div id="chapter-menu">
+        <button class="chapter-button" data-chapter="Pseudokod">Pseudokod</button>
+        <button class="chapter-button" data-chapter="Datatypes">Datatyper</button>
+        <button class="chapter-button" data-chapter="IfElse">If...Else</button>
+        <button class="chapter-button" data-chapter="Variables">Variabler</button>
+        <button class="chapter-button" data-chapter="LogicalOperators">Logical Operators</button>
+        <button class="chapter-button" data-chapter="Arrays">Arrayer</button>
+        <button class="chapter-button" data-chapter="Loops">Loopar</button>
+        <button class="chapter-button" data-chapter="LoopArrays">Loop Arrays</button>
+        <button class="chapter-button" data-chapter="Switch">Switch</button>
+        <button class="chapter-button" data-chapter="Functions">Functions</button>
+        <button class="chapter-button" data-chapter="GitGitHub">Git och GitHub</button>
+      </div>
+      <button id="home-button" class="navigation-button hidden">Startsida</button>
+    </div>
+
+    <!-- Quiz-del -->
+    <div id="quiz-area" class="hidden">
+      <p id="question-text"></p>
+      <div id="answer-buttons"></div>
+      <div id="explanation-box" class="hidden">
+        <p id="explanation-text"></p>
+      </div>
+      <button id="next-button" class="navigation-button hidden">Nästa fråga</button>
+    </div>
+
+    <!-- Resultatdel -->
+    <div id="result" class="hidden">
+      <p><span id="score"></span></p>
+      <button id="restart-button" class="navigation-button hidden">Starta om detta kapitel</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
