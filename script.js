@@ -166,8 +166,8 @@ const chapters = {
     {
       question: "Vilken operator används för att kontrollera om två värden är lika i JavaScript?",
       answers: ["==", "===", "="],
-      correct: 1,
-      explanation: "'===' används för strikt likhet, vilket inkluderar både värde och datatyp."
+      correct: [0,1]
+      explanation: ""===" används för strikt jämförelse, vilket innebär att både värde och datatyp måste vara samma för att det ska returnera true. Å andra sidan är "==" en lös jämförelse som bara jämför värdena, oavsett datatyp. Till exempel: 1 == '1' returnerar true eftersom värdena är lika, även om datatyperna skiljer sig. Däremot returnerar 1 === '1' false eftersom datatyperna inte matchar."
     },
     {
       question: "Hur kan du skapa en if-sats som kontrollerar om ett nummer är både större än 10 och mindre än 20?",
@@ -334,7 +334,7 @@ const chapters = {
       answers: [
         "for (let i = 0; i < array.length; i++) {}",
         "array.forEach(element => {})",
-        "Båda ovanstående"
+        "Båda alternativen"
       ],
       correct: 2,
       explanation: "Både for-loopen och forEach-metoden kan användas för att iterera över en array."
@@ -424,7 +424,7 @@ const chapters = {
     answers: [
       "function myFunction() { // kod här }",
       "let myFunction = function() { // kod här }",
-      "Båda ovanstående"
+      "Båda alternativen"
     ],
     correct: 2,
     explanation: "Det finns flera sätt att deklarera funktioner i JavaScript, inklusive vanliga funktioner och funktioner tilldelade till variabler."
