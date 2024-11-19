@@ -166,7 +166,7 @@ const chapters = {
     {
       question: "Vilken operator används för att kontrollera om två värden är lika i JavaScript?",
       answers: ["==", "===", "="],
-      correct: [0,1],
+      correct: [0, 1],
       explanation: " "===" används för strikt jämförelse, vilket innebär att både värde och datatyp måste vara samma för att det ska returnera true. Å andra sidan är "==" en lös jämförelse som bara jämför värdena, oavsett datatyp. Till exempel: 1 == '1' returnerar true eftersom värdena är lika, även om datatyperna skiljer sig. Däremot returnerar 1 === '1' false eftersom datatyperna inte matchar."
     },
     {
